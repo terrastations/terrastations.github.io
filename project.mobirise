@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "Terrastations",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/wallets-station.png",
+    "mbrsiteDomain": "xrqwoxaf6y",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Terra Station",
+        "meta_descr": "Terra Station is a web application to interact with Terra Core. Terra Station Wallet History Stake Governance NFT Contract. Tutorial. Loading... Terra 2.0. Connect. Governance New proposal Voting Deposit Passed Rejected. 880 | Text proposal Voting Emergency Allocation for Momentum One & Hermes Protocol.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/station-terra-money-1.png\" alt=\"Terra Station\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-0",
+          "_isUserblock": true,
+          "_cid": "tbyy5UQKnU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Terra Station</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">This somewhat new convention is one of the champion instances of Cosmos' web of blockchains in real life. Named \"the DeFi center of Cosmos\", Terra has areas of strength for an across Asia and is arising as one of the most incredible spots for bold Yield Farmers to investigate.\n<br>\n<br>In this extreme manual for yield cultivating on the <a href=\"https://terrastations.github.io/\" class=\"text-primary\">Terra Station</a> organization, we'll go through the critical elements of the innovation, which biological system accomplices you really want to be aware, the wallets you can utilize and the best marking or yield cultivating open doors that exist at the present time.\n<br>\n<br><b>What is the Terra (LUNA) Network?\n</b><br>Land (LUNA) is a decentralized monetary convention that professes to be \"programmable cash for the web\".\n<br>\n<br>It was made in January 2018 by prime supporters Daniel Shin and Do Kwon with the aggressive objective <a href=\"https://terrastations.github.io/\" class=\"text-primary\">Terra Station</a> of building a computerized monetary framework free of significant banks and laid out fintechs. It likewise looked to use the capability of online business to increment digital currency reception and was supported by the Terra Alliance, a gathering of web based business monsters in Asia, to do as such.\n<br>\n<br>Land (LUNA) is now and again alluded to as the \"DeFi center of Cosmos\" and was constructed utilizing the Tendermint Cosmos SDK (Software Development Kit). Thus, it integrates the BFT-based (Byzantine Fault Tolerance) Proof of Stake agreement motor and, similar to all Cosmos-based blockchains, is intended to be connected to the more extensive Cosmos organization.\n<br>\n<br>Land upholds shrewd agreements as a feature of its main goal to be programmable cash for the web. It likewise utilizes the local LUNA token, a stablecoin convention and a prophet framework, with a portion of these key elements made sense of underneath.\n<br>\n<br><b>Interoperability\n</b><br>The overall reception of blockchain innovation can't happen without interoperability and Terra was intended to run on various <a href=\"https://terrastations.github.io/\" class=\"text-primary\">Terra Station</a> organizations, associated by the Cosmos Inter-Blockchain Communication Protocol. As of now, Terra is accessible on Ethereum and Solana.\n<br>\n<br><b>Stablecoins\n</b><br>The stablecoins presented by Terra are fixed to government issued types of money and are being utilized in reality now, particularly in Asia. At present, there are around 20 different stablecoins coursing in the Terra environment, the most settled of which are UST (which is fixed to the US dollar) and KRT (which is fixed toward the South Korean won).\n<br>\n<br>Land gives self-balancing out stablecoins that are directed through a flexible financial stock instrument. This includes the convention changing the stockpile of a resource for assist with holding its worth.\n<br>\n<br><b>Anchor convention\n</b><br>Stablecoin holders can procure prizes through the Anchor convention. It offers:\n<br>\n<br>Moment stores and withdrawals\n<br>Momentary credits\n<br>Stable yield cultivating gains.\n<br>Significant Anchor has a 20% stablecoin loan fee.\n<br>\n<br>Reflect convention\n<br>Reflect is a generally new item that was sent off in December 2020. It permits clients to produce computerized portrayals of certifiable resources, like US values and ETFs, and to exchange these manufactured resources (known as mAssets).\n<br>\n<br><b>What is the Terra (LUNA) Ecosystem?\n</b><br>Land is accepted to be one of the most amazing conventions to fabricate dApps on as it permits architects to compose brilliant agreements in Rust, Go or AssemblyScript. Aside from composing their own usefulness, designers can likewise module more highlights utilizing the convention's promptly accessible prophets.\n<br>\n<br>Probably the most notable dApps in the Terra environment incorporate Saturn Money (An European client centered interface for installments, reserve funds and on/exit ramps), Spar Protocol (a decentralized on-chain resource the executives convention) and LoTerra (a decentralized lottery).\n<br>\n<br>LUNA holders ought to likewise take note of how the symbolic's cost is connected to the financial movement that happens in the Terra organization. That is on the grounds that the Terra stablecoins scale with request. Thus, assuming action increments and more stablecoins are stamped to fulfill this need, a comparable measure of LUNA tokens are singed. This diminishes the stockpile of LUNA tokens, which is probably going to affect their cost decidedly.\n<br>\n<br>Biological system Partnerships\n<br>As referenced, Terra has been fabricated utilizing the Cosmos SDK in light of the <a href=\"https://terrastations.github.io/\" class=\"text-primary\">Terra Station</a> fact that the pioneers accept interoperability is vital. This is likewise why Terra has laid out environment organizations, various which are noted beneath.\n<br>\n<br><b>Land Bridge\n</b><br>A web frontend that empowers Terra resources for be sent effectively to and from Ethereum and Binance Smart Chain.\n<br>\n<br><b>Transport\n</b><br>An extension to Ethereum and Binance Smart Chain.\n<br>\n<br><b>Wormhole\n</b><br>An extension between Terra, Ethereum and Solana being created by Certus One.\n<br>\n<br><b>Axelar\n</b><br>An extension among Terra and other Layer 1 blockchains.\n<br>\n<br><b>Injective Protocol\n</b><br>A decentralized subsidiaries exchanging convention that uses Mirror resources.\n<br>\n<br><b>Intellabridge\n</b><br>A scaffold empowering decentralized versatile banking application \"Kash\", which carries Mirror and Anchor to standard crowds.\n<br>\n<br><b>Circle Finance\n</b><br>A Decentralized Exchange (DEX) that rundowns local Terra resources, ERC-20 tokens and SPL tokens.\n<br>What are the Terra (LUNA) Wallets?\n<br>You can utilize different wallets to get to the Terra network for marking and yield cultivating, a couple of which are recorded underneath.\n<br>\n<br>Programming wallets\n<br>Land Station\n<br>\n<br>A web expansion and downloadable programming wallet, Terra Station permits you to get to dApps fueled by shrewd agreements on the Terra blockchain. It has been created by the makers of Terra and is accessible for all working frameworks.\n<br>\n<br>Math Wallet\n<br>\n<br>A multi-stage (portable, work area expansion and equipment), general crypto wallet that was established in 2017 by Eric Yu.\n<br>\n<br>Track your Terra Portfolio on DEFIYIELD\n<br>Land accessible on DEFIYIELD!\n<br>\n<br>Track your portfolio including resources, pools and that's only the tip of the iceberg!</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "header2-1",
+          "_isUserblock": true,
+          "_cid": "tbyy72UFbn",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
